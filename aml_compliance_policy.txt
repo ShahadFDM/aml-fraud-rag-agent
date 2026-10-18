@@ -1,0 +1,12 @@
+
+Rule 101: High-Value Evasion
+Any TRANSFER or CASH_OUT transaction where the transaction amount exceeds 200,000 local currency units requires immediate manual review for potential money laundering or capital flight.
+
+Rule 102: Account Takeover & Depletion
+Transactions that empty an originating account's balance to zero (where the oldbalanceOrg is equal to or slightly higher than the transaction amount, resulting in a newbalanceOrig of 0) are highly suspicious. This pattern strongly indicates potential account takeover followed by immediate fund extraction.
+
+Rule 103: Mule Account Indication
+Any TRANSFER transaction directed to a recipient account that has an initial balance of zero (oldbalanceDest = 0) is flagged as a high-risk indicator for the use of "mule accounts," especially if the transaction amount is greater than 50,000.
+
+Rule 104: Abnormal Merchant Payments
+Any PAYMENT transaction directed to a Merchant account (where the recipient ID starts with 'M') that exceeds 100,000 is considered anomalous. Since merchant balances are not tracked by the core ledger (showing as 0.0), large sudden payments require Enhanced Due Diligence (EDD) to verify the legitimacy of the merchant services.

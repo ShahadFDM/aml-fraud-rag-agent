@@ -1,0 +1,32 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python & IDE artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Datasets (raw and sampled)
+data/raw/
+PS_*.csv
+PS_*.xlsx
+*log*.csv
+sampled_transactions.csv
+
+# Generated model artifacts & vector stores
+fraud_model.joblib
+*.joblib
+*.pkl
+faiss_aml_index/

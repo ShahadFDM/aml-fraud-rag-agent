@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+joblib
+python-dotenv
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+langchain-groq
+sentence-transformers
+faiss-cpu
